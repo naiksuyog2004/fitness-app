@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fitness-app/static/css/main.32ece884.css",
-    "main.js": "/fitness-app/static/js/main.9c59058e.js",
-    "static/media/banner.png": "/fitness-app/static/media/banner.5209b5e92a864ca0c615.png",
-    "static/media/gym.png": "/fitness-app/static/media/gym.6e701417c428e2fbc267.png",
-    "index.html": "/fitness-app/index.html",
-    "main.32ece884.css.map": "/fitness-app/static/css/main.32ece884.css.map",
-    "main.9c59058e.js.map": "/fitness-app/static/js/main.9c59058e.js.map"
+    "main.css": "/naiksuyog2004/fitness-app/static/css/main.32ece884.css",
+    "main.js": "/naiksuyog2004/fitness-app/static/js/main.19239b4b.js",
+    "static/media/banner.png": "/naiksuyog2004/fitness-app/static/media/banner.5209b5e92a864ca0c615.png",
+    "static/media/gym.png": "/naiksuyog2004/fitness-app/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/naiksuyog2004/fitness-app/index.html",
+    "main.32ece884.css.map": "/naiksuyog2004/fitness-app/static/css/main.32ece884.css.map",
+    "main.19239b4b.js.map": "/naiksuyog2004/fitness-app/static/js/main.19239b4b.js.map"
   },
   "entrypoints": [
     "static/css/main.32ece884.css",
-    "static/js/main.9c59058e.js"
+    "static/js/main.19239b4b.js"
   ]
 }
