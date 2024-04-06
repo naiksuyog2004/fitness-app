@@ -1,3 +1,18 @@
+## FitHub - GIT Hackathon Project
+
+Fithub combines comprehensive exercise information with video content from youtube, offering seamless experience to discover and learn and implement their preferred workout routines. Our problem statement revoloves around health consciousness, health literacy, and mentorship in this field.
+
+<br/>
+
+Link to the Live app - <a href="https://naiksuyog2004.github.io/fitness-app/"> FitHub </a>
+
+
+<br/>
+<br/>
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
