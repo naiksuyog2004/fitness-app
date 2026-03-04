@@ -5,6 +5,8 @@ import { Search } from '@mui/icons-material';
 import HeroBanner from '../components/HeroBanner';
 import SearchExercises from '../components/SearchExercises';
 import Exercises from '../components/Exercises';
+import Navbar from '../components/Navbar';
+
 
 const Home = () => {
   const [bodyPart, setBodyPart] = useState('all');
@@ -14,6 +16,7 @@ const Home = () => {
 
   return (
     <Box>
+      <Navbar />
       <HeroBanner />
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
       <Exercises exercises={exercises} setExercises={setExercises} bodyPart={bodyPart} />

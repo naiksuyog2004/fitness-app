@@ -3,6 +3,7 @@ import { Typography, Button, Box, Card, CardContent } from '@mui/material';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../Firebase/firestore';
 import MentorForm from './MentorForm'; // Import MentorForm here
+import Navbar from './Navbar';
 
 const Mentors = () => {
     const [showForm, setShowForm] = useState(false);
@@ -40,6 +41,7 @@ const Mentors = () => {
 
     return (
         <div>
+            <Navbar />
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', margin: '30px', marginBottom: '20px' }}>
                 <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
                     Our Mentors

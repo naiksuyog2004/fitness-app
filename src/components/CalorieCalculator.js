@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, TextField, Button, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
+import Navbar from './Navbar';
 
 const CalorieCalculator = () => {
     const [height, setHeight] = useState('');
@@ -35,7 +36,8 @@ const CalorieCalculator = () => {
         setRecommendedCalories(generatedCalories);
     };
 
-    return (
+    return (<>
+        <Navbar />
         <Box sx={{ maxWidth: '600px', margin: 'auto', padding: '20px' }}>
             <Typography variant="h3" gutterBottom>
                 BMI Calculator
@@ -92,6 +94,7 @@ const CalorieCalculator = () => {
                 </Box>
             )}
         </Box>
+    </>
     );
 }
 

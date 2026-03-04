@@ -16,7 +16,7 @@ const Footer = () => {
         textAlign="center"
       >
         Made by <br />
-        Team Mavericks
+        Suyog Naik
       </Typography>
     </Box>
   );

@@ -9,6 +9,7 @@ import merch1 from '../assets/images/merch1.png';
 import merch2 from '../assets/images/merch2.png';
 import merch3 from '../assets/images/merch3.png';
 import { Typography, Card } from '@mui/material';
+import Navbar from './Navbar';
 
 const Shops = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -41,7 +42,8 @@ const Shops = () => {
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    return (
+    return (<>
+        <Navbar />
         <div className="shops-container">
             <h3 className="main-heading">Shop & Merchandise</h3>
             <input
@@ -63,6 +65,7 @@ const Shops = () => {
                 ))}
             </div>
         </div>
+    </>
     );
 };
 

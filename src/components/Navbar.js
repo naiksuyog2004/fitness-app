@@ -1,9 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Stack } from '@mui/material';
 import Logo from '../assets/images/Logo.png';
+import { auth } from '../Firebase/setup';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (u) => setUser(u));
+    return () => unsub();
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate('/login');
+    } catch (err) {
+      console.error('Logout error', err);
+    }
+  };
+
   return (
     <Stack
       direction="row"
@@ -38,6 +57,21 @@ const Navbar = () => {
         <Link to="/shop" style={{ textDecoration: 'none', color: '#3A1212' }}>Shop</Link>
         <Link to="/plans" style={{ textDecoration: 'none', color: '#3A1212' }}>Plans</Link>
         <Link to="/calorie-calculator" style={{ textDecoration: 'none', color: '#3A1212' }}>Calorie Calculator</Link>
+        {user && (
+          <button
+            onClick={handleLogout}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: '#3A1212',
+              fontSize: '20px',
+              fontWeight: '700',
+              cursor: 'pointer'
+            }}
+          >
+            Logout
+          </button>
+        )}
       </Stack>
     </Stack>
   );

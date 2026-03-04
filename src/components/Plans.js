@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Image1 from '../assets/images/Beg.webp'; // Import your images here
 import Image2 from '../assets/images/inter.jpg';
 import Image3 from '../assets/images/pro.jpg';
+import Navbar from './Navbar';
 
 const cardTextStyle = {
     textDecoration: 'none', // Remove text decoration
 };
 
 const Plans = () => {
-    return (
+    return (<>
+        <Navbar />
         <Box
             sx={{
                 padding: '20px',
@@ -21,6 +23,7 @@ const Plans = () => {
                 marginTop: '40px'
             }}
         >
+
             <Typography variant="h4" sx={{ marginBottom: '20px' }}>Choose Your Plan</Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={4}>
@@ -58,6 +61,7 @@ const Plans = () => {
                 </Grid>
             </Grid>
         </Box>
+    </>
     );
 }
 
